@@ -1,0 +1,31 @@
+$font__primary: 'Bai Jamjuree',
+sans-serif;
+$cyan: hsl(171, 66%, 44%);
+$purple: hsl(233, 100%, 69%);
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+$xlightgray:hsl(220, 18%, 97%);
+
+//media queries
+$breakpoints: (small:699px,
+    medium: 700px,
+    large:1000px,
+    xlarge:1300);
+
+@mixin breakpoint($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (min-width:$breakpoint-value) {
+        @content;
+
+    }
+}
+
+@mixin breakpoint-less($size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and (max-width:$breakpoint-value) {
+        @content;
+
+    }
+}
