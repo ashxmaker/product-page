@@ -4,7 +4,7 @@
 
 Images/Design by Frontend Mentor
 
-##Coded by me
+## Coded by me
 
 ## Welcome! 👋
 
